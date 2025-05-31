@@ -1,9 +1,14 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="container mx-auto max-w-7xl flex justify-between items-center text-sm py-14">
-        <div className="flex">
+    <div className="container mx-auto max-w-7xl flex justify-between items-center text-sm pb-14 pt-[113px] text-white relative">
+        <div 
+          className="absolute inset-0 bg-center bg-no-repeat bg-cover" 
+          style={{ backgroundImage: 'url(/bg.png)' }}
+        ></div>
+        <div className="flex relative z-10">
             <div className="col-6 gap-y-6">
                 <div className="inline-flex items-center mb-11 bg-[#0F131D] border-[1px] border-white/10 px-1.5 py-1 rounded-xl z-10">
                     <span className="uppercase bg-white text-black text-[10px] px-1.5 py-1 rounded-md font-semibold">Update</span>
