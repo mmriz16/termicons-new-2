@@ -1,6 +1,6 @@
 'use client';
 
-import Toggle from '../btn/toggle';
+import Toggle from '../ui/toggle';
 
 const Pricing = () => {
   return (
