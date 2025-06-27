@@ -43,11 +43,11 @@ const Faq = () => {
   return (
     <div className="container max-w-7xl mx-auto text-sm py-14 text-white">
       <div className="flex gap-12">
-        <div className="flex-1">
+        <div className="flex-1 sticky top-[95px] self-start" id="faq-title">
           <p className='inline-flex mb-[30px] mx-auto bg-white/10 border-[1px] border-white/10 px-3 py-1.5 rounded-xl text-xs font-medium'>FAQ&apos;s</p>
           <h1 className='text-[54px] font-bold'>Frequently Asked Questions</h1>
         </div>
-        <div className="flex-1 flex flex-col gap-4" id="collapse-faq">
+        <div className="flex-1 flex flex-col gap-4" id="completed-1" data-slot="scroll-area">
           {faqData.map((faq, index) => (
             <div key={index} className="card border border-white/10 rounded-3xl overflow-hidden">
               <button
