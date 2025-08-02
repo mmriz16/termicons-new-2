@@ -1,5 +1,6 @@
+import React from 'react';
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Roboto, Plus_Jakarta_Sans } from 'next/font/google';
+import { Geist, Geist_Mono as GeistMono, Roboto, Plus_Jakarta_Sans as PlusJakartaSans } from 'next/font/google';
 import './globals.css';
 
 import { ReactLenis } from './utils/lenis';
@@ -9,7 +10,7 @@ const geistSans = Geist({
   subsets: [ 'latin' ],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = GeistMono({
   variable: '--font-geist-mono',
   subsets: [ 'latin' ],
 });
@@ -20,7 +21,7 @@ const roboto = Roboto({
   weight: [ '300', '400', '500', '700', '900' ],
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const plusJakartaSans = PlusJakartaSans({
   variable: '--font-plus-jakarta-sans',
   subsets: [ 'latin' ],
   weight: [ '200', '300', '400', '500', '600', '700', '800' ],
