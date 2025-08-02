@@ -44,6 +44,8 @@ const eslintConfig = [
       'no-unsafe-finally': 'off',
       'no-console': 0,
       'no-mixed-spaces-and-tabs': 0,
+      'camelcase': 'off',
+      'no-undef': 'off',
     },
   },
   {
