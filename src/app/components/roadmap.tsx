@@ -1,11 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Roadmap = () => {
-  const [hoveredSection, setHoveredSection] = useState<string | null>(null);
-
   return (
     <div className="container grid gap-[50px] text-white mx-auto max-w-7xl my-[100px]">
       <div className="grid gap-[30px] text-center" id="title">
@@ -15,11 +12,7 @@ const Roadmap = () => {
       </div>
       <div className="flex gap-5 h-[580px]" id="roadmap">
         {/* Completed Section */}
-        <div
-          className="flex-1 flex flex-col gap-4 py-4 bg-white/[3%] rounded-3xl border border-white/10"
-          onMouseEnter={() => setHoveredSection('completed')}
-          onMouseLeave={() => setHoveredSection(null)}
-        >
+        <div className="flex-1 flex flex-col gap-4 py-4 bg-white/[3%] rounded-3xl border border-white/10">
           <h1 className="text-base text-center font-bold">Completed</h1>
           <ScrollArea className="h-[508px] px-4" data-lenis-prevent>
             <div className="flex flex-col gap-4">
@@ -62,11 +55,7 @@ const Roadmap = () => {
         </div>
 
         {/* Coming Soon Section */}
-        <div
-          className="flex-1 flex flex-col gap-4 py-4 bg-white/[3%] rounded-3xl border border-white/10"
-          onMouseEnter={() => setHoveredSection('coming-soon')}
-          onMouseLeave={() => setHoveredSection(null)}
-        >
+        <div className="flex-1 flex flex-col gap-4 py-4 bg-white/[3%] rounded-3xl border border-white/10">
           <h1 className="text-base text-center font-bold">Coming Soon</h1>
           <ScrollArea className="h-[508px] px-4" data-lenis-prevent>
             <div className="flex flex-col gap-4">
@@ -105,11 +94,7 @@ const Roadmap = () => {
         </div>
 
         {/* Planned Section */}
-        <div
-          className="flex-1 flex flex-col gap-4 py-4 bg-white/[3%] rounded-3xl border border-white/10"
-          onMouseEnter={() => setHoveredSection('planned')}
-          onMouseLeave={() => setHoveredSection(null)}
-        >
+        <div className="flex-1 flex flex-col gap-4 py-4 bg-white/[3%] rounded-3xl border border-white/10">
           <h1 className="text-base text-center font-bold">Planned</h1>
           <ScrollArea className="h-[508px] px-4" data-lenis-prevent>
             <div className="flex flex-col gap-4">
